@@ -255,6 +255,11 @@ body {
     position: absolute;
   }
 
+  .dropdown-align-right {
+    left: auto;
+    right: 0;
+  }
+
   .navbar-dropdown .navbar-item {
     padding: 0.5rem 1rem;
     white-space: nowrap;
