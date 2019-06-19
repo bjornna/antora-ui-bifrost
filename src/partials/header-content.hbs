@@ -2,12 +2,15 @@
   <nav class="navbar">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{or site.url (or siteRootUrl siteRootPath)}}">{{site.title}}</a>
+      {{#if headerMenu}}
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
         <span></span>
       </button>
+      {{/if}}
     </div>
+    {{#if headerMenu}}
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
         <a class="navbar-item" href="#">Home</a>
@@ -42,5 +45,6 @@
         </div>
       </div>
     </div>
+    {{/if}}
   </nav>
 </header>
