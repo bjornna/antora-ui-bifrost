@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  color: var(--color-text);
+  color: var(--font-color);
   line-height: 1.6;
   margin: 0;
 }
