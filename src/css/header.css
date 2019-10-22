@@ -61,6 +61,12 @@ body {
   height: var(--navbar-height);
 }
 
+.navbar-logo {
+  height: 42px;
+  width: 40px;
+  margin: auto 0 auto 15px;
+}
+
 .navbar-burger {
   color: var(--navbar-font-color);
   background: none;
