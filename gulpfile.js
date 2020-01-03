@@ -4,20 +4,23 @@ const { parallel, series, watch } = require('gulp')
 const createTask = require('./gulp.d/lib/create-task')
 const exportTasks = require('./gulp.d/lib/export-tasks')
 
-const bundleName = 'ui'
+const bundleName = 'ui-pdf'
 const buildDir = 'build'
 const previewSrcDir = 'preview-src'
 const previewDestDir = 'public'
 const srcDir = 'src'
+const startPaths = ['']
 const destDir = `${previewDestDir}/_`
 const { reload: livereload } = process.env.LIVERELOAD === 'true' ? require('gulp-connect') : {}
 const serverConfig = { host: '0.0.0.0', port: 5252, livereload }
 
 const task = require('./gulp.d/tasks')
+
+const srcPaths = startPaths === [''] ? [srcDir] : startPaths.map((path) => path === '' ? srcDir : `${srcDir}/${path}`)
 const glob = {
-  all: [srcDir, previewSrcDir],
+  all: [...srcPaths, previewSrcDir],
   css: `${srcDir}/css/**/*.css`,
-  js: ['gulpfile.js', 'gulp.d/**/*.js', `${srcDir}/{helpers,js}/**/*.js`],
+  js: ['gulpfile.js', 'gulp.d/**/*.js', `{${srcPaths.join(',')}}/{helpers,js}/**/*.js`],
 }
 
 const cleanTask = createTask({
@@ -53,7 +56,7 @@ const formatTask = createTask({
 const buildTask = createTask({
   name: 'build',
   desc: 'Build and stage the UI assets for bundling',
-  call: task.build(srcDir, destDir, process.argv.slice(2).some((name) => name.startsWith('preview'))),
+  call: task.build(srcDir, startPaths, destDir, process.argv.slice(2).some((name) => name.startsWith('preview'))),
 })
 
 const bundleBuildTask = createTask({
