@@ -52,3 +52,15 @@ pages:
   artifacts:
     paths:
       - public
+test-pages:
+  stage: deploy
+  except:
+    - master@nobuta05/antora-ui-default
+  cache: *pull_cache
+  script:
+    - *npm_install
+    - node_module/.bin/gulp preview:build
+    - rm -rf public/_/{helpers,layouts,partials}
+  artifacts:
+    paths:
+      - public/$CI_COMMIT_REF_NAME
