@@ -52,17 +52,17 @@ pages:
   artifacts:
     paths:
       - public
-test-pages:
-  stage: deploy
-  except:
-    - master@nobuta05/antora-ui-default
-  cache: *pull_cache
-  script:
-    - *npm_install
-    - node_modules/.bin/gulp preview:build
-    - mkdir -p public/$CI_COMMIT_REF_NAME
-    - mv public/index.html public/$CI_COMMIT_REF_NAME/
-    - rm -rf public/_/{helpers,layouts,partials}
-  artifacts:
-    paths:
-      - public/$CI_COMMIT_REF_NAME
+# test-pages:
+#   stage: deploy
+#   except:
+#     - master@nobuta05/antora-ui-default
+#   cache: *pull_cache
+#   script:
+#     - *npm_install
+#     - node_modules/.bin/gulp preview:build
+#     - mkdir -p public/$CI_COMMIT_REF_NAME
+#     - mv public/index.html public/$CI_COMMIT_REF_NAME/
+#     - rm -rf public/_/{helpers,layouts,partials}
+#   artifacts:
+#     paths:
+#       - public/$CI_COMMIT_REF_NAME
