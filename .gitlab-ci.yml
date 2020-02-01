@@ -59,7 +59,7 @@ test-pages:
   cache: *pull_cache
   script:
     - *npm_install
-    - node_module/.bin/gulp preview:build
+    - node_modules/.bin/gulp preview:build
     - rm -rf public/_/{helpers,layouts,partials}
   artifacts:
     paths:
