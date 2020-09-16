@@ -7,5 +7,6 @@ build:
     - npm install
     - npx gulp bundle
   artifacts:
-    untracked: True
-    expire_in: 2 weeks
+    expire_in: 1 day
+    paths:
+    - build/ui-bundle.zip
