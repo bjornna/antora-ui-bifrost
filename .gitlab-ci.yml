@@ -1,12 +1,17 @@
-image: node:lts-slim
-stages: [build]
+---
+
+stages:
+  - build
 
 build:
   stage: build
+  image: node:lts-slim
+  tags:
+    - docker
   script:
     - npm install
     - npx gulp bundle
   artifacts:
     expire_in: 1 day
     paths:
-    - build/ui-bundle.zip
+      - build/ui-bundle.zip
