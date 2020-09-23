@@ -32,6 +32,12 @@
   --body-font-weight-bold: 500;
   --monospace-font-family: "Helvetica", monospace;
   --monospace-font-weight-bold: 500;
+  /* Font weight */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
   /* base */
   --body-background: var(--color-accent-grey);
   --panel-background: var(--color-smoke-30);
@@ -39,7 +45,7 @@
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
   --navbar-background: var(--color-jet-80);
-  --navbar-font-color: var(--color-gray-10);
+  --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
   --navbar-button-background: var(--color-hm-green);
   --navbar-button-border-color: var(--color-black);
@@ -59,8 +65,8 @@
   /* toolbar */
   --toolbar-background: var(--color-hm-green);
   --toolbar-border-color: var(--color-black);
-  --toolbar-font-color: var(--color-hm-green);
-  --toolbar-muted-color: var(--color-hm-green);
+  --toolbar-font-color: var(--color-black);
+  --toolbar-muted-color: var(--color-black);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-black);
   /* toc */
@@ -115,11 +121,15 @@
   --quote-attribution-font-color: var(--color-gray-50);
   --sidebar-background: var(--color-gray-50);
   --table-border-color: var(--panel-border-color);
+  --color-border: var(--color-hm-green);
   /* footer */
   --footer-line-height: var(--doc-line-height);
   --footer-background: var(--color-gray-50);
   --footer-font-color: var(--color-black);
-  --footer-link-font-color: var(--color-sm-orange);
+  --footer-link-font-color: var(--color-hm-green);
+  --color-footer-text: var(--color-white);
+  --color-footer-text-alt: var(--color-hm-green);
+  --color-footer-terms-text: var(--color-hm-green);
   /* dimensions and positioning */
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
