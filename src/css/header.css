@@ -157,6 +157,11 @@ body {
   margin: 0.25rem 0;
 }
 
+.navbar-brand img {
+  height: 65px;
+  transition: height 0.5s ease;
+}
+
 @media screen and (max-width: 1023px) {
   .navbar-brand .navbar-item {
     align-items: center;

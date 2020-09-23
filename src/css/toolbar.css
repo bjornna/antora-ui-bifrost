@@ -16,6 +16,16 @@
   color: inherit;
 }
 
+.toolbar-logo {
+  padding: 1rem 0;
+  width: 250px;
+}
+
+.toolbar-logo img {
+  width: 100%;
+  vertical-align: top;
+}
+
 .nav-toggle {
   background: url(../img/menu.svg) no-repeat 50% 47.5%;
   background-size: 49%;
@@ -40,7 +50,7 @@
 }
 
 .home-link {
-  background: url(../img/home-o.svg) no-repeat 50% 45%;
+  background: url(../img/github-dark.png) no-repeat 50% 45%;
   background-size: 50%;
   display: block;
   height: 2.5rem;
@@ -48,9 +58,9 @@
   width: 2.5rem;
 }
 
-.home-link:hover,
+/* .home-link:hover,
 .home-link.is-current {
-  background-image: url(../img/home.svg);
+  background-image: url(../img/github-dark.png);
 }
 
 .edit-this-page {
@@ -66,4 +76,4 @@
 
 .toolbar .edit-this-page a {
   color: var(--toolbar-muted-color);
-}
+} */
