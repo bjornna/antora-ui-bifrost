@@ -160,20 +160,20 @@ body {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 768.5px) {
+@media screen and (width <= 768.5px) {
   .navbar-brand .navbar-item.search {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
   #search-input {
     width: 200px;
   }
 }
 
-@media screen and (max-width: 1023.5px) {
+@media screen and (width <= 1023.5px) {
   .navbar-brand {
     height: inherit;
   }
@@ -202,7 +202,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .navbar-burger {
     display: none;
   }

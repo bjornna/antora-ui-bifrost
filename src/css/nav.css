@@ -8,13 +8,13 @@
   visibility: hidden;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
   .nav-container {
     width: var(--nav-width);
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .nav-container {
     font-size: calc(15.5 / var(--rem-base) * 1rem);
     flex: none;
@@ -35,13 +35,13 @@
   height: var(--nav-height);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
   .nav {
     box-shadow: 0.5px 0 3px var(--nav-border-color);
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .nav {
     top: var(--navbar-height);
     box-shadow: none;
