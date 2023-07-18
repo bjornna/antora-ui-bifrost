@@ -1,86 +1,125 @@
-/*! Adapted from the GitHub style by Vasily Polovnyov <vast@whiteants.net> */
-.hljs-comment,
-.hljs-quote {
-  color: #998;
-  font-style: italic;
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-subst {
-  color: #333;
-  font-weight: var(--monospace-font-weight-bold);
+code.hljs {
+  padding: 3px 5px;
 }
 
-.hljs-number,
-.hljs-literal,
+.hljs {
+  color: #e9e9f4;
+  background: #282936;
+}
+
+.hljs::selection,
+.hljs ::selection {
+  background-color: #4d4f68;
+  color: #e9e9f4;
+}
+
+/* purposely do not highlight these things */
+/*
+.hljs-formula,
+.hljs-params,
+.hljs-property {}
+*/
+
+/* base03 - #626483 -  Comments, Invisibles, Line Highlighting */
+.hljs-comment {
+  color: #626483;
+}
+
+/* base04 - #62d6e8 -  Dark Foreground (Used for status bars) */
+.hljs-tag {
+  color: #62d6e8;
+}
+
+/* base05 - #e9e9f4 -  Default Foreground, Caret, Delimiters, Operators */
+.hljs-subst,
+.hljs-punctuation,
+.hljs-operator {
+  color: #e9e9f4;
+}
+
+.hljs-operator {
+  opacity: 0.7;
+}
+
+/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
+.hljs-bullet,
 .hljs-variable,
 .hljs-template-variable,
-.hljs-tag .hljs-attr {
-  color: #008080;
+.hljs-selector-tag,
+.hljs-name,
+.hljs-deletion {
+  color: #ea51b2;
 }
 
-.hljs-string,
-.hljs-doctag {
-  color: #d14;
+/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */
+.hljs-symbol,
+.hljs-number,
+.hljs-link,
+.hljs-attr,
+.hljs-variable.constant_,
+.hljs-literal {
+  color: #b45bcf;
 }
 
 .hljs-title,
-.hljs-section,
-.hljs-selector-id {
-  color: #900;
-  font-weight: var(--monospace-font-weight-bold);
-}
-
-.hljs-subst {
-  font-weight: normal;
-}
-
-.hljs-type,
-.hljs-class .hljs-title {
-  color: #458;
-  font-weight: var(--monospace-font-weight-bold);
-}
-
-.hljs-tag,
-.hljs-name,
-.hljs-attribute {
-  color: #000080;
-  font-weight: normal;
-}
-
-.hljs-regexp,
-.hljs-link {
-  color: #009926;
-}
-
-.hljs-symbol,
-.hljs-bullet {
-  color: #990073;
-}
-
-.hljs-built_in,
-.hljs-builtin-name {
-  color: #0086b3;
-}
-
-.hljs-meta {
-  color: #999;
-  font-weight: var(--monospace-font-weight-bold);
-}
-
-.hljs-deletion {
-  background: #fdd;
-}
-
-.hljs-addition {
-  background: #dfd;
-}
-
-.hljs-emphasis {
-  font-style: italic;
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+  color: #00f769;
 }
 
 .hljs-strong {
-  font-weight: var(--monospace-font-weight-bold);
+  font-weight: bold;
+  color: #00f769;
+}
+
+.hljs-code,
+.hljs-addition,
+.hljs-title.class_.inherited__,
+.hljs-string {
+  color: #ebff87;
+}
+
+.hljs-built_in,
+.hljs-doctag, /* guessing */
+.hljs-quote,
+.hljs-keyword.hljs-atrule,
+.hljs-regexp {
+  color: #a1efe4;
+}
+
+.hljs-function .hljs-title,
+.hljs-attribute,
+.ruby .hljs-property,
+.hljs-title.function_,
+.hljs-section {
+  color: #62d6e8;
+}
+
+.hljs-type,
+.hljs-template-tag,
+.diff .hljs-meta,
+.hljs-keyword {
+  color: #b45bcf;
+}
+
+.hljs-emphasis {
+  color: #b45bcf;
+  font-style: italic;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string {
+  color: #00f769;
+}
+
+.hljs-meta .hljs-keyword,
+.hljs-meta-keyword {
+  font-weight: bold;
 }
