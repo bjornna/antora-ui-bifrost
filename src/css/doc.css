@@ -70,7 +70,8 @@
 }
 
 .doc h3:not(.discrete),
-.doc h4:not(.discrete) {
+.doc h4:not(.discrete),
+.doc h5:not(.discrete) {
   font-weight: var(--alt-heading-font-weight);
 }
 
