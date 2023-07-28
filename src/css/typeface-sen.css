@@ -1,0 +1,45 @@
+
+/* Font Weight 400 - Regular */
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap');
+}
+
+/* Font Weight 500 */
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://fonts.googleapis.com/css2?family=Sen:wght@500&display=swap');
+}
+
+/* Font Weight 600 */
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://fonts.googleapis.com/css2?family=Sen:wght@600&display=swap');
+}
+
+/* Font Weight 700 */
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+}
+
+/* Font Weight 800 */
+
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 800;
+  src: url('https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap');
+}
