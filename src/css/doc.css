@@ -70,7 +70,8 @@
 }
 
 .doc h3:not(.discrete),
-.doc h4:not(.discrete) {
+.doc h4:not(.discrete),
+.doc h5:not(.discrete) {
   font-weight: var(--alt-heading-font-weight);
 }
 
@@ -138,7 +139,7 @@
 .doc thead code,
 .doc .colist > table code {
   color: var(--code-font-color);
-  background: var(--code-background);
+  /* background: var(--code-background); */
   border-radius: 0.25em;
   font-size: 0.95em;
   padding: 0.125em 0.25em;
@@ -745,7 +746,7 @@
 .doc pre.highlight code,
 .doc .listingblock pre:not(.highlight),
 .doc .literalblock pre {
-  background: var(--pre-background);
+  /* background: var(--pre-background); */
   box-shadow: inset 0 0 1.75px var(--pre-border-color);
   display: block;
   overflow-x: auto;
