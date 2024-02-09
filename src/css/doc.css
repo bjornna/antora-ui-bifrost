@@ -8,7 +8,7 @@
   padding: 0 1rem 4rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   .doc {
     flex: auto;
     font-size: var(--doc-font-size--desktop);
@@ -36,7 +36,7 @@
   margin: 1.5rem 0;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
   .doc > h1.page:first-child {
     margin-top: 2.5rem;
   }
