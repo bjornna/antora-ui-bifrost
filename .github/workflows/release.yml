@@ -27,3 +27,8 @@ jobs:
       env:
         GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npx gulp bundle
+    - name: Archive UI bundle artifacts 
+      uses: actions/upload-artifact@v4
+      with: 
+        name: ui-bundle
+        path: build/ui-bundle.zip
