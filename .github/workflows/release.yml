@@ -32,3 +32,15 @@ jobs:
       with: 
         name: ui-bundle
         path: build/ui-bundle.zip
+  deploy: 
+    needs: build
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Download Artifact 
+        uses: actions/upload-artifact@v4
+        with: 
+          name: ui-bundle 
+          path: /dist
+      - name: List Artifacts 
+        run: ls /dist 
+    
