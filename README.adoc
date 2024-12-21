@@ -21,7 +21,7 @@
 
 image:{img-ci-status}[CI Status (GitLab CI), link={url-ci-pipelines}]
 
-This project is made to explore how to use Antora UI in a customized build. 
+This project is made to explore how to use Antora UI in a customized build. I will try to make it work....
 
 This project is an archetype that demonstrates how to produce a UI bundle that can be used by {url-antora}[Antora] to generated a documentation site.
 You can see a preview of the default UI at {url-preview}.
