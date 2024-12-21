@@ -39,8 +39,4 @@ jobs:
       - name: Download Artifact 
         uses: actions/download-artifact@v4
         with: 
-          name: ui-bundle 
-          path: /dist
-      - name: List Artifacts 
-        run: ls /dist 
-    
+          name: ui-bundle           
