@@ -1,0 +1,45 @@
+name: Releases
+on: 
+  push:
+    branches: 
+      - master
+    tags:
+    - '*'
+
+jobs:
+  build:      
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Gulp Bundle
+        env:
+          GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx gulp bundle
+      - name: Extract tgz
+        uses: ihiroky/extract-action@v1
+        with:
+          file_path: build/ui-bundle.zip        
+          extract_dir: build/dist
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-bundle
+          path: build/dist
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "dist/ui-bundle.zip"        
