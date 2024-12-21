@@ -45,6 +45,5 @@ jobs:
         uses: actions/download-artifact@v4
         with: 
           name: ui-bundle
-          path: .
-          pattern: ui-bundle.zip
+          path: build/dist          
       - run: ls -R .
