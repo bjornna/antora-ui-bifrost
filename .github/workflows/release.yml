@@ -42,7 +42,7 @@ jobs:
         name: ui-bundle
         path: build/dist/*
   deploy: 
-    needs: build
+    needs: collect
     runs-on: ubuntu-latest 
     steps: 
       - name: Download Artifact 
