@@ -39,4 +39,7 @@ jobs:
       - name: Download Artifact 
         uses: actions/download-artifact@v4
         with: 
-          name: ui-bundle           
+          name: ui-bundle
+          path: .
+          pattern: ui-bundle.zip
+      - run: ls -R .
