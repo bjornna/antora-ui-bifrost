@@ -18,6 +18,17 @@ Vis no velit audiam, sonet <<dependencies,praesent>> eum ne.
 Integer diam enim, dignissim eget eros et, ultricies mattis odio.
 --
 
+
+
+[horizontal]
+[red]#Rødt varsel#:: Dersom STRATIFY score > 1, vil dette varsles med et rødt fall-ikon og teksten "Høy fallrisiko".
+
+[yellow]#Gult varsel#:: Dersom STRATIFY score = 1, vil det varsles med et gult fall-ikon og teksten "Moderat fallrisiko".
+
+[lime]#Grønt varsel#:: Dersom STRATIFY score = 0, vil det varsles med et grønt fall-ikon og teksten "Lav fallrisiko".
+
+
+
 Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 https://example.org[Curabitur,role=unresolved] ut massa aliquam, cursus enim et, accumsan lectus.
