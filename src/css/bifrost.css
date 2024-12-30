@@ -7,6 +7,15 @@
   padding-bottom: 4px;
 }
 
+.orange {
+  color: black;
+  background-color: #ffb89e;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .yellow {
   color: black;
   background-color: #ffea99;
@@ -19,6 +28,15 @@
 .lime {
   color: black;
   background-color: #cfc;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.gray {
+  color: black;
+  background-color: #d3d3d3;
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 4px;
